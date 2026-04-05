@@ -6,89 +6,45 @@
 <title>Mysan Connection</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #eef2f7;
-}
-header {
-    background: linear-gradient(90deg, #004aad, #00c6ff);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
-nav {
-    background: #111;
-    padding: 12px;
-    text-align: center;
-}
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-section {
-    padding: 40px 20px;
-}
-.container {
-    max-width: 1000px;
-    margin: auto;
-}
-.card {
-    background: white;
-    padding: 25px;
-    margin: 15px 0;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-.paket {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.paket .card {
-    flex: 1;
-    min-width: 250px;
-    text-align: center;
-}
-button {
-    background: #25d366;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-input, select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-}
-footer {
-    background: #000;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+body {font-family: Arial;margin:0;background:#eef2f7;}
+header {background:linear-gradient(90deg,#004aad,#00c6ff);color:white;text-align:center;padding:60px;}
+nav {background:#111;padding:12px;text-align:center;}
+nav a {color:white;margin:0 15px;text-decoration:none;}
+section {padding:40px 20px;}
+.container {max-width:1000px;margin:auto;}
+.card {background:white;padding:25px;margin:15px 0;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+.paket {display:flex;flex-wrap:wrap;gap:20px;}
+.paket .card {flex:1;min-width:250px;text-align:center;}
+button {background:#25d366;color:white;border:none;padding:12px;border-radius:6px;}
+footer {background:#000;color:white;text-align:center;padding:20px;}
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Mysan Connection</h1>
-    <p>Internet Super Cepat & Stabil untuk Rumah & Usaha</p>
+<img src="logo.png" width="100"><br>
+<h1>Mysan Connection</h1>
+<p>Internet Cepat & Stabil</p>
 </header>
 
 <nav>
-    <a href="#paket">Paket</a>
-    <a href="#daftar">Daftar</a>
-    <a href="#kontak">Kontak</a>
+<a href="#paket">Paket</a>
+<a href="#daftar">Daftar</a>
+<a href="#kontak">Kontak</a>
 </nav>
+
+<section>
+<div class="container">
+<h2>Kenapa Pilih Mysan Connection?</h2>
+
+<div class="card">⚡ Internet cepat & stabil</div>
+<div class="card">💰 Harga terjangkau</div>
+<div class="card">🛠️ Pemasangan cepat</div>
+<div class="card">📶 Cocok untuk rumah & usaha</div>
+
+</div>
+</section>
 
 <section id="paket">
 <div class="container">
@@ -121,19 +77,19 @@ footer {
 <section id="daftar">
 <div class="container">
 <div class="card">
-<h2>Form Pendaftaran WiFi</h2>
+<h2>Form Pendaftaran</h2>
 
-<input type="text" id="nama" placeholder="Nama Lengkap">
-<input type="text" id="alamat" placeholder="Alamat Lengkap">
-<input type="text" id="hp" placeholder="No WhatsApp">
-<select id="paket">
-<option value="">Pilih Paket</option>
+<input type="text" id="nama" placeholder="Nama">
+<input type="text" id="alamat" placeholder="Alamat">
+<input type="text" id="hp" placeholder="No HP">
+<select id="paket2">
+<option>Pilih Paket</option>
 <option>50 Mbps</option>
 <option>100 Mbps</option>
 <option>200 Mbps</option>
 </select>
 
-<button onclick="daftar()">Daftar Sekarang</button>
+<button onclick="daftar()">Daftar</button>
 
 </div>
 </div>
@@ -144,36 +100,81 @@ footer {
 <div class="card">
 <h2>Kontak</h2>
 <p>WhatsApp: 089531706088</p>
-<p>Melayani pemasangan cepat & profesional</p>
+<p>Melayani area: (isi daerah kamu)</p>
+<p>Teknisi berpengalaman & terpercaya</p>
 </div>
 </div>
 </section>
 
+<section>
+<div class="container">
+<h2>Testimoni Pelanggan</h2>
+
+<div class="card">
+<p>“Internetnya stabil banget, streaming lancar terus 👍”</p>
+<b>- Andi</b>
+</div>
+
+<div class="card">
+<p>“Harga murah tapi kualitas mantap 🔥”</p>
+<b>- Budi</b>
+</div>
+
+<div class="card">
+<p>“Main game nggak lag lagi, recommended!”</p>
+<b>- Rizky</b>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Kegiatan Pemasangan</h2>
+
+<div class="card">
+<img src="pasang1.jpg" width="100%">
+<p>Pemasangan WiFi di rumah pelanggan</p>
+</div>
+
+<div class="card">
+<img src="pasang2.jpg" width="100%">
+<p>Proses instalasi jaringan</p>
+</div>
+
+</div>
+</section>
+
 <footer>
-<p>© 2026 Mysan Connection</p>
+<p>© 2019 Mysan Connection</p>
 </footer>
+
+<a href="https://wa.me/6289531706088" 
+style="position:fixed;bottom:20px;right:20px;
+background:#25d366;color:white;
+padding:15px;border-radius:50%;
+text-decoration:none;">💬</a>
 
 <script>
 function pesan(paket) {
-    let nomor = "6289531706088";
-    let text = "Halo Mysan Connection, saya mau pesan paket " + paket;
-    window.location.href = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(text);
+let nomor="6289531706088";
+let text="Halo, saya mau pesan paket "+paket;
+window.location.href="https://wa.me/"+nomor+"?text="+encodeURIComponent(text);
 }
 
 function daftar() {
-    let nama = document.getElementById("nama").value;
-    let alamat = document.getElementById("alamat").value;
-    let hp = document.getElementById("hp").value;
-    let paket = document.getElementById("paket").value;
+let nama=document.getElementById("nama").value;
+let alamat=document.getElementById("alamat").value;
+let hp=document.getElementById("hp").value;
+let paket=document.getElementById("paket2").value;
 
-    let nomor = "6289531706088";
-    let text = "PENDAFTARAN WIFI%0A"
-        + "Nama: " + nama + "%0A"
-        + "Alamat: " + alamat + "%0A"
-        + "No HP: " + hp + "%0A"
-        + "Paket: " + paket;
+let text="PENDAFTARAN WIFI%0A"
++"Nama: "+nama+"%0A"
++"Alamat: "+alamat+"%0A"
++"HP: "+hp+"%0A"
++"Paket: "+paket;
 
-    window.location.href = "https://wa.me/" + nomor + "?text=" + text;
+window.location.href="https://wa.me/6289531706088?text="+text;
 }
 </script>
 
