@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PT Sriwijaya Ampera Nusantara</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#222;
+}
+
+header{
+background:linear-gradient(90deg,#002B5B,#0057B8);
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.button{
+background:#FFC107;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+color:#000;
+font-weight:bold;
+}
+
+section{
+padding:70px 8%;
+}
+
+.title{
+font-size:38px;
+text-align:center;
+margin-bottom:50px;
+color:#003B7A;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#0057B8;
+}
+
+footer{
+background:#002B5B;
+color:white;
+text-align:center;
+padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">PT Sriwijaya Ampera Nusantara</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Tentang</a>
+<a href="#">Brand</a>
+<a href="#">Layanan</a>
+<a href="#">Kontak</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Menghubungkan Indonesia Dengan Internet Berkualitas</h1>
+
+<p>Penyedia solusi Fiber Optik, Dedicated Internet, Enterprise Network, dan Digital Infrastructure.</p>
+
+<a class="button" href="#">Daftar Sekarang</a>
+
+</div>
+</section>
+
+<section>
+
+<h2 class="title">Tentang Kami</h2>
+
+<p style="text-align:center;font-size:18px;max-width:900px;margin:auto;">
+PT Sriwijaya Ampera Nusantara adalah perusahaan yang bergerak di bidang telekomunikasi dan teknologi informasi yang menaungi berbagai brand internet dengan fokus pada kualitas jaringan, pelayanan profesional, dan inovasi digital.
+</p>
+
+</section>
+
+<section>
+
+<h2 class="title">Brand Internet</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>INET STARHOME</h3>
+<p>Internet Fiber Optik untuk rumah dengan koneksi stabil dan harga terjangkau.</p>
+</div>
+
+<div class="card">
+<h3>MYSAN CONNECTION</h3>
+<p>Solusi internet cepat untuk rumah, UMKM, dan bisnis.</p>
+</div>
+
+<div class="card">
+<h3>BUANA SPEED NETWORK</h3>
+<p>Layanan internet premium untuk perusahaan dan instansi.</p>
+</div>
+
+<div class="card">
+<h3>SAN DIGITAL NETWORK</h3>
+<p>Dedicated Internet dan Enterprise Network Solution.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Layanan Kami</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Fiber Optik</h3>
+</div>
+
+<div class="card">
+<h3>Dedicated Internet</h3>
+</div>
+
+<div class="card">
+<h3>CCTV & Networking</h3>
+</div>
+
+<div class="card">
+<h3>Managed Service</h3>
+</div>
+
+<div class="card">
+<h3>Data Center</h3>
+</div>
+
+<div class="card">
+<h3>Cloud Solution</h3>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Hubungi Kami</h2>
+
+<p style="text-align:center;font-size:18px;">
+📍 PT Sriwijaya Ampera Nusantara<br><br>
+
+📞 WhatsApp : 08xxxxxxxxxx<br>
+
+📧 Email : info@sriwijayaampera.co.id<br>
+
+🌐 www.sriwijayaampera.co.id
+
+</p>
+
+</section>
+
+<footer>
+
+© 2026 PT Sriwijaya Ampera Nusantara<br>
+
+Building Indonesia's Digital Future
+
+</footer>
+
+</body>
+</html>
