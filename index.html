@@ -3,194 +3,235 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>mysan Connection</title>
+<title>PT Sriwijaya Ampera Nusantara</title>
 
 <style>
-body {font-family: Arial;margin:0;background:#eef2f7;}
-header {background:linear-gradient(90deg,#004aad,#00c6ff);color:white;text-align:center;padding:60px;}
-nav {background:#111;padding:12px;text-align:center;}
-nav a {color:white;margin:0 15px;text-decoration:none;}
-section {padding:40px 20px;}
-.container {max-width:1000px;margin:auto;}
-.card {background:white;padding:25px;margin:15px 0;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
-.paket {display:flex;flex-wrap:wrap;gap:20px;}
-.paket .card {flex:1;min-width:250px;text-align:center;}
-button {background:#25d366;color:white;border:none;padding:12px;border-radius:6px;}
-footer {background:#000;color:white;text-align:center;padding:20px;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#222;
+}
+
+header{
+background:linear-gradient(90deg,#002B5B,#0057B8);
+color:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.button{
+background:#FFC107;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+color:#000;
+font-weight:bold;
+}
+
+section{
+padding:70px 8%;
+}
+
+.title{
+font-size:38px;
+text-align:center;
+margin-bottom:50px;
+color:#003B7A;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#0057B8;
+}
+
+footer{
+background:#002B5B;
+color:white;
+text-align:center;
+padding:30px;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<img src="mysan LOGO.png" width="300"><br>
-<h1>Mysan Connection</h1>
-<p>Internet Cepat & Stabil</p>
-</header>
+<div class="logo">PT Sriwijaya Ampera Nusantara</div>
 
 <nav>
-<a href="#paket">Paket</a>
-<a href="#daftar">Daftar</a>
-<a href="#kontak">Kontak</a>
+<a href="#">Home</a>
+<a href="#">Tentang</a>
+<a href="#">Brand</a>
+<a href="#">Layanan</a>
+<a href="#">Kontak</a>
 </nav>
+</header>
 
-<section>
-<div class="container">
-<h2>Kenapa Pilih Mysan Connection?</h2>
+<section class="hero">
+<div>
+<h1>Menghubungkan Indonesia Dengan Internet Berkualitas</h1>
 
-<div class="card">⚡ Internet cepat & stabil</div>
-<div class="card">💰 Harga terjangkau</div>
-<div class="card">🛠️ Pemasangan cepat</div>
-<div class="card">📶 Cocok untuk rumah & usaha</div>
+<p>Penyedia solusi Fiber Optik, Dedicated Internet, Enterprise Network, dan Digital Infrastructure.</p>
 
-</div>
-</section>
-
-<section id="paket">
-<div class="container">
-<h2>Paket Internet</h2>
-
-<div class="paket">
-
-<div class="card">
-<h3>50 Mbps</h3>
-<h2>Rp115.000</h2>
-<button onclick="pesan('50 Mbps')">Pesan</button>
-</div>
-
-<div class="card">
-<h3>100 Mbps</h3>
-<h2>Rp165.000</h2>
-<button onclick="pesan('100 Mbps')">Pesan</button>
-</div>
-
-<div class="card">
-<h3>200 Mbps</h3>
-<h2>Rp265.000</h2>
-<button onclick="pesan('200 Mbps')">Pesan</button>
-</div>
-
-</div>
-</div>
-</section>
-
-<div class="card">
-<h2>PEMBAYARAN BULANAN</h2>
-
-<p>Silakan lakukan pembayaran melalui link di bawah:</p>
-
-<a href="https://mysanpay.com" target="_blank">
-<button>Bayar Sekarang</button>
-</a>
-
-</div>
-
-<section id="daftar">
-<div class="container">
-<div class="card">
-<h2>Form Pendaftaran</h2>
-
-<input type="text" id="nama" placeholder="Nama">
-<input type="text" id="alamat" placeholder="Alamat">
-<input type="text" id="hp" placeholder="No HP">
-<select id="paket2">
-<option>Pilih Paket</option>
-<option>50 Mbps</option>
-<option>100 Mbps</option>
-<option>200 Mbps</option>
-</select>
-
-<button onclick="daftar()">Daftar</button>
-
-</div>
-</div>
-</section>
-
-<section id="kontak">
-<div class="container">
-<div class="card">
-<h2>Kontak</h2>
-
-<p>📞 WhatsApp: 089531706088</p>
-<p>📧 Email: mysanhome7@gmail.com</p>
-<p>📍 Alamat: (ruko pasar.johar barat rt002 rw016 kel.karawang wetan kab.karawang)</p>
-
-<p>Melayani pemasangan cepat & profesional</p>
-</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-<h2>Testimoni Pelanggan</h2>
-
-<div class="card">
-<p>“Internetnya stabil banget, streaming lancar terus 👍”</p>
-<b>- Andi</b>
-</div>
-
-<div class="card">
-<p>“Harga murah tapi kualitas mantap 🔥”</p>
-<b>- Budi</b>
-</div>
-
-<div class="card">
-<p>“Main game nggak lag lagi, recommended!”</p>
-<b>- Rizky</b>
-</div>
+<a class="button" href="#">Daftar Sekarang</a>
 
 </div>
 </section>
 
 <section>
-<div class="container">
-<h2>Kegiatan Pemasangan</h2>
+
+<h2 class="title">Tentang Kami</h2>
+
+<p style="text-align:center;font-size:18px;max-width:900px;margin:auto;">
+PT Sriwijaya Ampera Nusantara adalah perusahaan yang bergerak di bidang telekomunikasi dan teknologi informasi yang menaungi berbagai brand internet dengan fokus pada kualitas jaringan, pelayanan profesional, dan inovasi digital.
+</p>
+
+</section>
+
+<section>
+
+<h2 class="title">Brand Internet</h2>
+
+<div class="cards">
 
 <div class="card">
-<img src="poto kerja 1.jpeg" width="100%">
-<p>Pemasangan WiFi di rumah pelanggan</p>
+<h3>INET STARHOME</h3>
+<p>Internet Fiber Optik untuk rumah dengan koneksi stabil dan harga terjangkau.</p>
 </div>
 
 <div class="card">
-<img src="poto kerja 3.jpeg" width="100%">
-<p>Proses instalasi jaringan</p>
+<h3>MYSAN CONNECTION</h3>
+<p>Solusi internet cepat untuk rumah, UMKM, dan bisnis.</p>
+</div>
+
+<div class="card">
+<h3>BUANA SPEED NETWORK</h3>
+<p>Layanan internet premium untuk perusahaan dan instansi.</p>
+</div>
+
+<div class="card">
+<h3>SAN DIGITAL NETWORK</h3>
+<p>Dedicated Internet dan Enterprise Network Solution.</p>
 </div>
 
 </div>
+
+</section>
+
+<section>
+
+<h2 class="title">Layanan Kami</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Fiber Optik</h3>
+</div>
+
+<div class="card">
+<h3>Dedicated Internet</h3>
+</div>
+
+<div class="card">
+<h3>CCTV & Networking</h3>
+</div>
+
+<div class="card">
+<h3>Managed Service</h3>
+</div>
+
+<div class="card">
+<h3>Data Center</h3>
+</div>
+
+<div class="card">
+<h3>Cloud Solution</h3>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Hubungi Kami</h2>
+
+<p style="text-align:center;font-size:18px;">
+📍 PT Sriwijaya Ampera Nusantara<br><br>
+
+📞 WhatsApp : 08xxxxxxxxxx<br>
+
+📧 Email : info@sriwijayaampera.co.id<br>
+
+🌐 www.sriwijayaampera.co.id
+
+</p>
+
 </section>
 
 <footer>
-<p>© 2019 Mysan Connection</p>
+
+© 2026 PT Sriwijaya Ampera Nusantara<br>
+
+Building Indonesia's Digital Future
+
 </footer>
-
-<a href="https://wa.me/6289531706088" 
-style="position:fixed;bottom:20px;right:20px;
-background:#25d366;color:white;
-padding:15px;border-radius:50%;
-text-decoration:none;">💬</a>
-
-<script>
-function pesan(paket) {
-let nomor="6289531706088";
-let text="Halo, saya mau pesan paket "+paket;
-window.location.href="https://wa.me/"+nomor+"?text="+encodeURIComponent(text);
-}
-
-function daftar() {
-let nama=document.getElementById("nama").value;
-let alamat=document.getElementById("alamat").value;
-let hp=document.getElementById("hp").value;
-let paket=document.getElementById("paket2").value;
-
-let text="PENDAFTARAN WIFI%0A"
-+"Nama: "+nama+"%0A"
-+"Alamat: "+alamat+"%0A"
-+"HP: "+hp+"%0A"
-+"Paket: "+paket;
-
-window.location.href="https://wa.me/6289531706088?text="+text;
-}
-</script>
 
 </body>
 </html>
